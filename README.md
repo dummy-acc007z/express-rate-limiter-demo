@@ -1,8 +1,9 @@
 1. Create a .env file with values:
-PORT=5005
-numberOfProxies=1
-maxCountRateLimit=10
-timerValRateLimitInMinutes=1
+    <br>`PORT=5005`
+    <br>`numberOfProxies=1`
+    <br>`maxCountRateLimit=10`
+    <br>`timerValRateLimitInMinutes=1`
+
 
 2. Run Command `npm i`
 
@@ -14,4 +15,4 @@ timerValRateLimitInMinutes=1
 
 6. Repeat `Step 5` from another device under a min (`Step 5` and `Step 6` together should be done under a min)
 
-7. Refer `Troubleshooting Proxy Issues` section at `https://www.npmjs.com/package/express-rate-limit` for if there is issue related to ip based rate limiting.
+7. Refer `Troubleshooting Proxy Issues` section at `https://www.npmjs.com/package/express-rate-limit`, if there is any issue related to ip based rate limiting.
