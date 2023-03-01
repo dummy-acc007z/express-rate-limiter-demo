@@ -1,6 +1,7 @@
 const express = require('express');
-const { rateLimiter } = require('./utils/rate-limiter');
 require('dotenv').config();
+
+const { rateLimiter } = require('./utils/rate-limiter');
 
 const envConfig = process.env;
 
