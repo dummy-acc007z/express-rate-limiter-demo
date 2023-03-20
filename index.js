@@ -8,12 +8,12 @@ const envConfig = process.env;
 const app = express();
 
 // Setting trust proxies
-app.set('trust proxy', envConfig.numberOfProxies);
+app.set('trust proxy', envConfig.PROXY_COUNT);
 
 // API without rate limiter
 app.get('/ip', (req, res) =>
     res.send({
-        proxyCount: envConfig.numberOfProxies,
+        proxyCount: envConfig.PROXY_COUNT,
         ip: req.ip
     })
 );
@@ -24,7 +24,14 @@ app.use(rateLimiter);
 // API with rate limter
 app.get('/ip2', (req, res) =>
     res.send({
-        proxyCount: envConfig.numberOfProxies,
+        proxyCount: envConfig.PROXY_COUNT,
+        ip: req.ip
+    })
+);
+
+app.get('/ip3', (req, res) =>
+    res.send({
+        proxyCount: envConfig.PROXY_COUNT,
         ip: req.ip
     })
 );

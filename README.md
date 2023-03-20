@@ -1,8 +1,8 @@
 1. Create a .env file with values:
     <br>`PORT=5005`
-    <br>`numberOfProxies=1`
-    <br>`maxCountRateLimit=10`
-    <br>`timerValRateLimitInMinutes=1`
+    <br>`PROXY_COUNT=1`
+    <br>`RATE_LIMIT_MAX=10`
+    <br>`RATE_LIMIT_TIMER=1`
 
 
 2. Run Command `npm i`
