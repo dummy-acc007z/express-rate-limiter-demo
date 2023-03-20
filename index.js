@@ -18,6 +18,14 @@ app.get('/ip', (req, res) =>
     })
 );
 
+app.get('/ip/:proxycount', (req, res) => {
+    app.set('trust proxy', req.params.proxycount);
+    res.send({
+        proxyCount: req.params.proxycount,
+        ip: req.ip
+    })
+});
+
 // Adding rate limiter
 app.use(rateLimiter);
 
